@@ -5,6 +5,8 @@ const app = express();
 
 dotenv.config();
 
+app.use(express.json());
+
 mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true}).then(()=>{
     console.log("MONGO Connected");
 }).catch((err)=>{
