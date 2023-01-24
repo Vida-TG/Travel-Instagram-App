@@ -5,12 +5,12 @@ const UserSchema = new mongoose.Schema({
         type: String,
         require: true,
         min: 3,
-        max: 20,
+        max: 25,
         unique: true
     },
     email: {
         type: String,
-        max: 50,
+        max: 55,
         require: true,
         unique: true
     },
